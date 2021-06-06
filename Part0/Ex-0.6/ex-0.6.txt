@@ -1,0 +1,18 @@
+title Ex-0.6
+
+note over browser:
+when entering new note information in 
+text box and clicking on submit button 
+browser send request to server
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+The POST address of new_note_spa 
+contains content and Timestamp
+end note
+server->browser:STATUS CODE:201 created
+note over browser:
+server does not ask for a redirect, 
+the browser stays on the same page, 
+and it sends no further HTTP requests.
+end note
