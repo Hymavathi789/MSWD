@@ -35,12 +35,12 @@ const App = () => {
             parts: [
                 {
                     name: 'Routing',
-                    exercises: 3,
+                    exercises: 5,
                     id: 1
                 },
                 {
                     name: 'Middlewares',
-                    exercises: 7,
+                    exercises: 8,
                     id: 2
                 }
             ]
