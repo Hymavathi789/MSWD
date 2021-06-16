@@ -9,8 +9,8 @@ const Statistic = (props) => {
 
 const Statistics = (props) => {
     const all = props.good + props.bad + props.neutral
-    const average = (props.good + (props.bad*-1))/all
-    const positive = (props.good)/all *100
+    const avg = (props.good + (props.bad*-1))/all
+    const pos = (props.good)/all *100
     if(all===0){
         return (
             <p>No feedbacks were given by the customers</p>
@@ -38,11 +38,11 @@ const Statistics = (props) => {
                     </tr>
                     <tr>
                         <td><Statistic text="Average " /></td>
-                        <td><Statistic text=":"value={average}  /></td>
+                        <td><Statistic text=":"value={avg}  /></td>
                     </tr>
                     <tr>
                         <td><Statistic text="Positivity" /></td>
-                        <td><Statistic text=":"value={positive} /></td>
+                        <td><Statistic text=":"value={pos} /></td>
                     </tr>
                 </tbody>
             </table>
