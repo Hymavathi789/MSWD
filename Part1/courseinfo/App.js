@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = ({course}) => {
+const Header = ({c}) => {
     return (
         <h1>{course}</h1>
     );
@@ -14,7 +14,7 @@ const Part = ({part}) => {
     );
 };
 
-const Content = ({parts}) => {
+const Content = ({p1}) => {
     return (
         <div>
             <Part part={parts[0]} />
@@ -24,9 +24,9 @@ const Content = ({parts}) => {
     );
 };
 
-const Total = ({parts}) => {
+const Total = ({p1}) => {
     return (
-        <p>Number of exercises {parts[0].exercises + parts[1].exercises + parts[2].exercises}</p>
+        <p>Number of exercises {p1[0].exercises + p1[1].exercises + p1[2].exercises}</p>
     );
 };
 
@@ -51,9 +51,9 @@ const App = () => {
 
     return (
         <div>
-            <Header course={course.name} />
-            <Content parts={course.parts} />
-            <Total parts={course.parts} />
+            <Header c={course.name} />
+            <Content p1={course.parts} />
+            <Total p1={course.parts} />
         </div>
     );
 };
